@@ -1,0 +1,8 @@
+.idea/
+*.iml
+.vscode/
+target/
+.env
+HELP.md
+logs/
+node_modules/
