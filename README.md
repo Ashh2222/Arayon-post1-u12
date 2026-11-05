@@ -90,3 +90,6 @@ Servicio activo en Render (las capturas conservan el prefijo `railway-` del nomb
 3. Perfil prod: `docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=prod -e DATASOURCE_URL=jdbc:postgresql://HOST:5432/BASE -e DATASOURCE_USER=... -e DATASOURCE_PASSWORD=... mi-spring-app:local`
 4. Verificar el estado: `curl http://localhost:8080/actuator/health`
 5. Consultar el pipeline en la pestaña **Actions** del repositorio.
+
+## Estado del pipeline
+Última verificación: el workflow `CI - Build, Test & Docker Image` pasa en verde y el despliegue en Render responde UP en `/actuator/health`.
